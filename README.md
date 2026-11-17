@@ -148,7 +148,7 @@ for half of the year).
 
 `docs/` holds the pictures above, taken on a TCL 55C735 with eight NASA photographs (public domain: aurorae seen from the
 International Space Station, the Crab and Lagoon nebulae from Hubble, Mars from Curiosity, Apollo 11) put on the TV by hand instead
-of an album, and the settings app with the album link cropped out. `screenshot.jpg` is the first one, kept for the cleanyourtv
+of an album, and the settings app with the album link replaced by an example address. `screenshot.jpg` is the first one, kept for the cleanyourtv
 showcase.
 
 ## Tests
