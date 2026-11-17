@@ -13,6 +13,22 @@ files cannot be mixed: this one shows the album.
 Package `com.cleanyourtv.albumdream`. You see it as **Album** in the TV's screensaver settings, as a tile in the app list
 and as a **module card** on Home (see cleanyourtv's [modules doc](https://github.com/Gathin23/cleanyourtv/blob/main/docs/modules.md)); all three open the settings app.
 
+## What it looks like
+
+Each option is independent, so the same album can look quite different. These are NASA photographs (public domain) put on the TV by hand.
+
+<table>
+<tr>
+<td align="center"><img src="docs/scene-prints-sky.jpg" width="260" alt="Three prints on the sky, with clock, dates and weather"><br><sub>Prints on the sky, clock, dates, weather</sub></td>
+<td align="center"><img src="docs/scene-prints.jpg" width="260" alt="Three prints on black with dates and weather"><br><sub>Prints on black, dates, weather</sub></td>
+<td align="center"><img src="docs/scene-fullscreen-clock-weather.jpg" width="260" alt="Full-screen picture with date, clock and weather"><br><sub>Full screen, date, clock, weather</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/scene-plain.jpg" width="260" alt="Plain full-screen slideshow"><br><sub>Plain slideshow (everything off)</sub></td>
+<td align="center" colspan="2"><img src="docs/settings.jpg" width="400" alt="The settings app"><br><sub>The settings app, all with the remote</sub></td>
+</tr>
+</table>
+
 ## Albums it understands
 
 | Link | Looks like | Notes |
@@ -59,8 +75,6 @@ TV_HOST=192.168.1.50 ./setup.sh --off    # previous screensaver back, album and 
 ```
 
 ## Settings on the TV
-
-![The Album settings app on a TV](settings.jpg)
 
 Open the **Album** card on Home (or its tile in the app list, or TV settings > Screensaver > Album > settings). Everything
 is reached with the remote. In the app, the left column is the album and its actions, the right column the options.
@@ -132,9 +146,10 @@ for half of the year).
 
 ## Screenshots
 
-`screenshot.jpg` shows the screensaver with five NASA photographs (public domain: aurorae seen from the International Space
-Station and the Lagoon Nebula from Hubble) put on the TV by hand instead of an album; `settings.jpg` is the settings app with the
-album link hidden.
+`docs/` holds the pictures above, taken on a TCL 55C735 with eight NASA photographs (public domain: aurorae seen from the
+International Space Station, the Crab and Lagoon nebulae from Hubble, Mars from Curiosity, Apollo 11) put on the TV by hand instead
+of an album, and the settings app with the album link cropped out. `screenshot.jpg` is the first one, kept for the cleanyourtv
+showcase.
 
 ## Tests
 

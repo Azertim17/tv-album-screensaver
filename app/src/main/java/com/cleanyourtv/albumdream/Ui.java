@@ -25,8 +25,17 @@ final class Ui {
 
     private Ui() {}
 
+    /** The settings screen is drawn at this share of its first size, so more of it fits on a TV without scrolling. */
+    private static final float SIZE = 0.8f;
+    private static final float TEXT_SIZE = 0.85f;
+
     static int dp(Context c, float v) {
-        return Math.round(v * c.getResources().getDisplayMetrics().density);
+        return Math.round(v * SIZE * c.getResources().getDisplayMetrics().density);
+    }
+
+    /** Text size in sp, scaled the same way as {@link #dp}. */
+    static float sp(float v) {
+        return v * TEXT_SIZE;
     }
 
     /** The screen: navy, with a teal glow top left and a violet one top right, like the launcher's aurora wallpaper. */
@@ -79,7 +88,7 @@ final class Ui {
 
     static TextView text(Context c, int sp, int color, boolean bold) {
         TextView t = new TextView(c);
-        t.setTextSize(TypedValue.COMPLEX_UNIT_SP, sp);
+        t.setTextSize(TypedValue.COMPLEX_UNIT_SP, sp(sp));
         t.setTextColor(color);
         t.setTypeface(bold ? Typeface.create("sans-serif-medium", Typeface.NORMAL) : Typeface.create("sans-serif", Typeface.NORMAL));
         return t;

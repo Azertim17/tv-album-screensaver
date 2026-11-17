@@ -294,9 +294,9 @@ public class SettingsActivity extends Activity {
         LinearLayout buttons = new LinearLayout(this);
         buttons.setOrientation(LinearLayout.HORIZONTAL);
         TextView find = pill(R.string.place_find, null, false, v -> findPlace());
-        buttons.addView(find, new LinearLayout.LayoutParams(0, Ui.dp(this, 56), 1f));
+        buttons.addView(find, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT, 1f));
         TextView tv = pill(R.string.place_use_tv, null, false, v -> useTvLocation());
-        LinearLayout.LayoutParams tp = new LinearLayout.LayoutParams(0, Ui.dp(this, 56), 1f);
+        LinearLayout.LayoutParams tp = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT, 1f);
         tp.leftMargin = Ui.dp(this, 10);
         buttons.addView(tv, tp);
         right.addView(buttons, matchWidth(0, 10, 0, 0));
@@ -484,7 +484,7 @@ public class SettingsActivity extends Activity {
         e.setHint(hint);
         e.setHintTextColor(Ui.FAINT);
         e.setTextColor(Ui.TEXT);
-        e.setTextSize(android.util.TypedValue.COMPLEX_UNIT_SP, 18);
+        e.setTextSize(android.util.TypedValue.COMPLEX_UNIT_SP, Ui.sp(18));
         e.setSingleLine(true);
         e.setImeOptions(ime);
         e.setText(text);
